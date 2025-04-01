@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+    <body>
+        <form action= "https://example.com" method="post" >
+            <div class="complete">
+
+                <label for="name"></label> 
+                <input type="name" id="name" name="name" placeholder="Your name" required>  
+
+            </div>
+
+            <div class="complete">
+
+                <label for="Last"></label> 
+                <input type="Last" id="password" name="Last" placeholder="Last" required>  
+
+            </div>
+            
+            <div class="complete">
+
+                <label for="age"></label> 
+                <input type="age" id="age" name="Age" placeholder="Age" required>  
+
+            </div>
+            
+            <div class="complete">
+
+                <label for="Email"></label> 
+                <input type="Email" id="email" name="Email" placeholder="Email" required>  
+
+            </div>
+            <fieldset class="select">
+                <legend>Agree to the terms? </legend>
+        
+                <input type="radio" id="acepto_si" name="acepto_radio" value="si" required>
+                <label for="acepto_si">Sí</label>
+        
+                <input type="radio" id="acepto_no" name="acepto_radio" value="no">
+                <label for="acepto_no">No</label>
+            </fieldset>
+        
+            <div class="checkbox">
+                <input type="checkbox" id="acepto_check" name="acepto_check" required>
+                <label for="acepto_check">Agree to the terms? </label>
+            </div>
+
+            <div class="submit">
+
+                <button type="submit">Send</button> 
+
+            </div>
+        
+        </form>
+    </body>
+</html>
