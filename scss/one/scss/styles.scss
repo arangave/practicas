@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #dbd334;
+  --secondary-color: #2ecc71;
+  --accent-color: #aa392d;
+  --text-color: #2c3e50;
+  --background-color: #ecf0f1;
+
+  --font-size-xl: 2.5rem;
+  --font-size-lg: 2rem;
+  --font-size-md: 1.5rem;
+  --font-size-sm: 1rem;
+
+  --transition-speed: 0.3s;
+  --transition-ease: ease-in-out;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  color: var(--primary-color);
+  transition: color var(--transition-speed) var(--transition-ease);
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+  color: var(--secondary-color);
+  transition: color var(--transition-speed) var(--transition-ease);
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+h3 {
+  font-size: var(--font-size-md);
+  color: var(--text-color);
+  transition: color var(--transition-speed) var(--transition-ease);
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+button {
+  font-size: var(--font-size-sm);
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform var(--transition-speed) var(--transition-ease);
+  &:hover {
+    transform: scale(1.1);
+  }
+}

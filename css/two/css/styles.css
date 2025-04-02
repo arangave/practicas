@@ -1,0 +1,46 @@
+body {
+  background-color: yellow;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #3498db;
+  transition: color 0.3s ease-in-out;
+}
+h1:hover {
+  color: #e74c3c;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2ecc71;
+  transition: color 0.3s ease-in-out;
+}
+h2:hover {
+  color: #e74c3c;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  transition: color 0.3s ease-in-out;
+}
+h3:hover {
+  color: #3498db;
+}
+
+button {
+  font-size: 1rem;
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5em;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=styles.css.map */
