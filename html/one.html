@@ -1,39 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <nav> /*cambio de nabvar por var para el menú*/
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </nav>
+    <header>/*ahora sería el header*/
+      <h1>Título Destacado</h1>
+    </header>
 
-//nav>ul>li*3>a{Link $}
+    <main>
+        <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing <strong>elit.</strong></p>
+        <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit.</p>
+        </section>
+      
+      <section>/*ahora una section*/
+        <h2>Titulo secundario</h2> /*etiquetas en orden*/
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </section>
 
-<nav>
-    <ul>
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
-    </ul>
-  </nav>
+      <footer>
+        <p>Todos los derechos reservados</p>
+        <p>2025</p>
+        <button onclick="myDialog.close()">
+          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m.967 14.217 5.8-5.906-5.765-5.89L3.094.26l5.783 5.888L14.66.26l2.092 2.162-5.766 5.889 5.801 5.906-2.092 2.162-5.818-5.924-5.818 5.924-2.092-2.162Z"
+              fill="#000"/>
+          </svg>
+        </button>
+    </footer>
+    </main>
 
-  //main>h1+p*3+article>p*2+apan*2
-  <main>
-    <h1>Título Destacado</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <article>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </article>
-    <article>
-      <span>Todos los derechos reservados</span>
-      <span>2025</span>
-    </article>
-  </main>
-
-  //footer>ul>li*4>a{Enlace $}
-  <footer>
-    <ul>
-      <li><a href="#">Enlace 1</a></li>
-      <li><a href="#">Enlace 2</a></li>
-      <li><a href="#">Enlace 3</a></li>
-      <li><a href="#">Enlace 4</a></li>
-    </ul>
-  </footer>
-
-
-  
+    <footer>
+      <ul>
+        <li><a href="#">Enlace 1</a></li>
+        <li><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+        <li><a href="#">Enlace 4</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
