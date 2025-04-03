@@ -18,13 +18,13 @@ sayHi();
 
 
 function sayHi() {
-  console.log("Hola desde sayHi!"); // Hola desde sayHi!
+  console.log("Hola desde sayHi!"); 
 }
 
 
 
 function sayBye() {
-  console.log("Adios desde sayBye!");//Adios desde sayBye!
+  console.log("Adios desde sayBye!");
 }
 
 sayBye();
