@@ -124,7 +124,7 @@ function esExtranjero(user) {
     return "Apto para obtener la ayuda de gobierno"
 
   }
-return "No es apto para obtener la ayuda del gobierno"
+return "No es apt para obtener la ayuda del gobierno"
   
 }
 
