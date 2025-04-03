@@ -116,7 +116,7 @@ const user = {
 
 //creamos la función para cuando no es español y cuando no tiene 30 años
 function esExtranjero(user) {
-  const esNoEspañol = user.nationality !== "España";
+  const esNoEspañol = user.nationality === "España";
   const tiene30Años = user.age === 30;
 
 //función para que sea más sencilla porque previamente he definido la función para ver si es español y si tiene 30 años
