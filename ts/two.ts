@@ -1,7 +1,7 @@
 /*Ejercicio 2, typescript: types e interfaces
 Partiendo del ejercicio 1, haz que la raza (race), solo pueda ser Husky, Labrador, Chucho*/
 
-// Tipos del objeto bird
+
 
 type BirdType = {
     name: string;
@@ -11,7 +11,7 @@ type BirdType = {
     canFly: boolean;
 };
 
-// Objeto bird
+
 const bird: BirdType = {
     name: "Francisco",
     canEat: true,
@@ -22,14 +22,14 @@ const bird: BirdType = {
 
 console.log("Bird:", bird);
 
-// Tipo del objeto dog usando Omit para quitar canFly
+
 type DogType = Omit<BirdType, "canFly"> & {
     canFly: boolean;
     race: "Husky" | "Labrador" | "Chucho";
     age: number;
 };
 
-// Objeto dog
+
 const dog: DogType = {
     name: "Toby",
     canEat: true,

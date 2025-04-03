@@ -4,7 +4,7 @@ Crea un objeto bird que tenga los siguientes datos: name, canEat, canDrink, canS
 Crea un objero dog que tenga los mismos datos que pájaro, pero que a demás tenga: race, age
 Crea los tipos/interfaces necesarios para poder trabajar con estos datos en TypeScript.*/
 
-// tipos del objeto bird
+
 
 type BirdType = {
     name: string;
@@ -14,7 +14,7 @@ type BirdType = {
     canFly: boolean;
 };
 
-//objeto
+
 const bird: BirdType = {
     name: "Francisco",
     canEat: true,
@@ -30,7 +30,7 @@ type DogType = Omit<BirdType, "canFly"> & {
     age: number;
 };
 
-// Objeto dog
+
 const dog: DogType = {
     name: "Toby",
     canEat: true,
