@@ -1,6 +1,7 @@
 /*Ejercicio 3, Creando más tipos
 Partiendo del ejercicio anterior, crea un nuevo objeto llamado cat que solamente tenga name, color, canSleep
 Partiendo del ejercicio anterior, crea un nuevo objeto llamado Snake que solamente tenga canEat, canDrink, canSleep*/
+
 type BirdType = {
     name: string;
     canEat: boolean;
@@ -9,7 +10,7 @@ type BirdType = {
     canFly: boolean;
 };
 
-// Objeto bird
+
 const bird: BirdType = {
     name: "Francisco",
     canEat: true,
@@ -20,17 +21,13 @@ const bird: BirdType = {
 
 console.log("Bird:", bird);
 
-type DogBase = Omit<BirdType, "canFly">;
 
-type DogRace = "Husky" | "Labrador" | "Chucho"; //añado para que solo puedan ser los tres tipos de raza
-
-type DogType = DogBase & {
+type DogType = Omit<BirdType, "canFly"> & {
     canFly: boolean;
-    race: DogRace;
+    race: "Husky" | "Labrador" | "Chucho";
     age: number;
 };
 
-// Objeto dog
 const dog: DogType = {
     name: "Toby",
     canEat: true,
@@ -44,11 +41,9 @@ const dog: DogType = {
 console.log("Dog:", dog);
 
 
-type CatType = {
-    name: string;
+type CatType = Pick<BirdType, "name" | "canSleep"> & {
     color: string;
-    canSleep: boolean;
-    canFly: boolean; //Los gatos tampoco vuelan
+    canFly: boolean;
 };
 
 
@@ -61,13 +56,10 @@ const cat: CatType = {
 
 console.log("Cat:", cat);
 
-
-type SnakeType = {
-    canEat: boolean;
-    canDrink: boolean;
-    canSleep: boolean;
-    canFly: boolean; //Las serpientes tampoco vuelan
+type SnakeType = Pick<BirdType, "canEat" | "canDrink" | "canSleep"> & {
+    canFly: boolean;
 };
+
 
 const snake: SnakeType = {
     canEat: true,

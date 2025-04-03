@@ -24,23 +24,23 @@ const bird: BirdType = {
 };
 
 console.log("Bird:", bird);
-type DogBase = Omit<BirdType, "canFly">; //quito canFly porque los perros no pueden volar Y CREO EL PERRO SIN QUE PUEDA VOLAR
-
-type DogType = DogBase & {
-    canFly: boolean; 
-    race: string;
+type DogType = Omit<BirdType, "canFly"> & {
+    canFly: boolean;
+    race: "Husky" | "Labrador" | "Chucho";
     age: number;
 };
 
+// Objeto dog
 const dog: DogType = {
     name: "Toby",
     canEat: true,
     canDrink: true,
     canSleep: true,
-    canFly: false, // Los perros no vuelan
+    canFly: false,
     race: "Husky",
     age: 2,
 };
+
 console.log("Dog:", dog);
 
 

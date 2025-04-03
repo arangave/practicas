@@ -22,13 +22,10 @@ const bird: BirdType = {
 
 console.log("Bird:", bird);
 
-type DogBase = Omit<BirdType, "canFly">;
-
-type DogRace = "Husky" | "Labrador" | "Chucho"; //añado para que solo puedan ser los tres tipos de raza
-
-type DogType = DogBase & {
+// Tipo del objeto dog usando Omit para quitar canFly
+type DogType = Omit<BirdType, "canFly"> & {
     canFly: boolean;
-    race: DogRace;
+    race: "Husky" | "Labrador" | "Chucho";
     age: number;
 };
 
