@@ -48,7 +48,7 @@ type CatType = Pick<BirdType, "name" | "canSleep"> & {
 
 
 const cat: CatType = {
-    name: "Firulais",
+    name: "Firulai",
     color: "Black",
     canSleep: true,
     canFly: false,
