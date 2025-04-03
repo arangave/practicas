@@ -1,4 +1,4 @@
-//con UNIONS
+
 
 type AnimalBase = {
     canEat: boolean;
